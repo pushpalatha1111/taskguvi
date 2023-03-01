@@ -1,0 +1,7 @@
+$redis = new Redis();
+$redisconnect('127.0.0.1', 6379);
+$redisset('username', 'session_data');
+$session_data = $redisget('password');
+$redisexpire('username', 3600);
+$redisdel('password');
+$redisclose();

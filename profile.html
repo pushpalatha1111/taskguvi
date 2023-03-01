@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile form</title><body>
+	<div class="container">
+		<h2>Profile</h2>
+		<form id="profile-form" method="post">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" id="name" name="name" required>
+			</div>
+			<div class="Form-group">
+				<label for="age">Age:</label>
+				<input type="number" class="form-control" id="age" name="age" required>
+			</div>
+			<div class="form-group">
+				<label for="dob">DOB:</label>
+				<input type="date" class="form-control" id="dob" name="dob" required>
+			</div>
+			<div class="form-group">
+				<label for="contact">Contact:</label>
+				<input type="tel" class="form-control" id="contact" name="contact" required>
+			</div>
+			<div class="form-group">
+				<label for="gender">Gender:</label>
+				<select class="form-control" id="gender" name="gender" required>
+					<option value="">-- Select Gender --</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<button type="submit" class="btn btn-primary">Save</button>
+		</form>
+	</div>
